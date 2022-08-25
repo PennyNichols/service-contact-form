@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schmidt's Home Services</title>
+    <script src="https://kit.fontawesome.com/0fd59fe5a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="s1" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="appointment" method="POST" action="/api/appointments">
+            <h1>Online Appointment Request Form</h1>
+            <label for="first">First Name: <span class="required">*</span></label>
+            <br>
+            <input  name="first" id="first-name" type="text" placeholder="First Name" class="form-control" required />
+            <br>
+
+            <label for="last">Last Name: <span class="required">*</span></label>
+            <br>
+            <input  name="last" id="last-name" type="text" placeholder="Last Name" class="form-control" required />
+            <br>
+
+            <label for="phone">Phone Number: <span class="required">*</span></label>
+            <br>
+            <input name="phone" id="phone" type="tel" placeholder="555-555-5555" class="form-control" required />
+            <br>
+
+            <label for="email">Email Address: <span class="required">*</span></label>
+            <br>
+            <input name="email" id="email" type="email" placeholder="example@website.com" class="form-control" required />
+            <br>
+
+            <label for="address">Address: </label>
+            <br>
+            <input name="address" id="address" type="text" placeholder="123 Main St..." class="form-control"  />
+            <br>
+
+            <label for="date">Desired Appointment Date: </label>
+            <br>
+            <input name="date" id="date" type="date" class="form-control"  />
+            <br>
+
+            <label for="time">Best Time of Day: </label>
+            <br>
+            <select name="time" id="time" type="select" class="form-control">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+            </select>
+            <br>
+
+            <label for="service">Service Selection: </label>
+            <br>
+            <select name="service" id="service" type="select" class="form-control">
+                <option value="Helping Hand">Helping Hand</option>
+                <option value="Construction">Construction</option>
+                <option value="Furniture Assembly">Assembly</option>
+                <option value="Home Repairs">Home Repairs</option>
+                <option value="Painting">Painting</option>
+                <option value="Demolition">Demolition</option>
+                <option value="Junk Removal">Junk Removal</option>
+                <option value="Delivery">Delivery</option>
+                <option value="Other">Other (please explain below)</option>
+            </select>
+            <br>
+
+            <label for="message">Additional Details: </label>
+            <br>
+            <textarea name="message" id="message" type="text" placeholder="Enter any additional details here. (known measurements, job details, etc.)" class="form-control" ></textarea>
+            <br>
+
+            <label for="documents">Photos/Documents: </label>
+            <br>
+            <a href="mailto:joshua@schmidtshomeservices.com">Click Here to Send Photos or Documents</a>
+            <br>
+
+            <button type="submit">Submit</button>
+            
+        </form>
+
+    </section>
+
+    <section class="s2" id="apply">
+
+        <h2 class="s2">Now Hiring!</h2>
+
+        <form id="applications" method="POST" action="/api/applications">
+            <h1>Online Employment Application</h1>
+            <label for="first">First Name: <span class="required">*</span></label>
+            <br>
+            <input  name="first" id="first-name" type="text" placeholder="First Name" class="form-control" required />
+            <br>
+
+            <label for="last">Last Name: <span class="required">*</span></label>
+            <br>
+            <input  name="last" id="last-name" type="text" placeholder="Last Name" class="form-control" required />
+            <br>
+
+            <label for="phone">Phone Number: <span class="required">*</span></label>
+            <br>
+            <input name="phone" id="phone" type="tel" placeholder="555-555-5555" class="form-control" required />
+            <br>
+            
+            <label for="email">Email Address: <span class="required">*</span></label>
+            <br>
+            <input name="email" id="email" type="email" placeholder="example@website.com" class="form-control" required />
+            <br>
+
+            <input name="workauth" id="workauth" type="checkbox" class="form-control"  />
+            <label for="workauth">I am a US citizen or I am authorized to work in the US</label>
+            <br>
+
+            <input name="background" id="background" type="checkbox" class="form-control"  />
+            <label for="background">I have not been convicted of any violent or theft-related crimes in the past three years</label>
+            <br>
+
+            <input name="insurance" id="insurance" type="checkbox" class="form-control"  />
+            <label for="insurance">I have my own liability insurance policy</label>
+            <br>
+
+            
+            <label for="available">When can you start? <span class="required">*</span></label>
+            <br>
+            <input name="available" id="available" type="date" class="form-control" required />
+            <br>
+            
+            <label for="position">Position: <span class="required">*</span></label>
+            <br>
+            <input  name="position" id="position" type="text" placeholder="Desired Position" class="form-control" />
+            <br>
+
+            <label for="time">Best Time to Contact: </label>
+            <br>
+            <select name="time" id="time" type="select" class="form-control">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            <br>
+
+            <label for="address">Address: </label>
+            <br>
+            <input name="address" id="address" type="text" placeholder="123 Main St..." class="form-control"  />
+            <br>
+
+            <label>What days can you work? : </label>
+            <br>
+            <input name="monday" id="monday" type="checkbox" class="form-control"  />
+            <label for="monday">Mondays</label>
+            <br>
+            <input name="tuesday" id="tuesday" type="checkbox" class="form-control"  />
+            <label for="tuesday">Tuesdays</label>
+            <br>
+            <input name="wednesday" id="wednesday" type="checkbox" class="form-control"  />
+            <label for="wednesday">Wednesdays</label>
+            <br>
+            <input name="thursday" id="thursday" type="checkbox" class="form-control"  />
+            <label for="Thursday">Thursdays</label>
+            <br>
+            <input name="friday" id="friday" type="checkbox" class="form-control"  />
+            <label for="friday">Fridays</label>
+            <br>
+            <input name="saturday" id="saturday" type="checkbox" class="form-control"  />
+            <label for="saturday">Saturdays</label>
+            <br>
+
+            <label for="weeklyhours">How many hours per week do you want to work? </label>
+            <input name="weeklyhours" id="weeklyhours" type="number" required />
+            <br>
+
+            <label for="hourlypay">Expected hourly pay: </label>
+            <input name="hourlypay" id="hourlypay" type="number" required />
+            <br>
+
+
+            <label>Your skills: </label>
+            <br>
+            <input name="permit" id="permit" type="checkbox" class="form-control"  /> 
+            <label for="permit">Currently possess any type of construction-related licenses granting the ability to pull permits</label>
+            <br>      
+
+            <input name="training" id="training" type="checkbox" class="form-control"  /> 
+            <label for="training">Currently possess or previously possessed any type of construction-related licenses or certifications (permit-granting or not) </label>
+            <br>   
+
+            <input name="communication" id="communication" type="checkbox" class="form-control"  /> 
+            <label for="communication">Clear, comfortable, respectful communication skills </label>
+            <br> 
+
+            <input name="assemble" id="assemble" type="checkbox" class="form-control"  /> 
+            <label for="assemble">Can assemble most products within the manufacturers estimated assembly time</label>
+            <br>  
+
+            <label for="strength">Can lift approximately: </label>
+            <select name="strength" id="strength" type="select" class="form-control"  > 
+                <option value="50-75 lbs" selected>50-75 lbs</option>
+                <option value="76-100 lbs">76-100 lbs</option>
+                <option value="101-125 lbs">101-125 lbs</option>
+                <option value="126-150 lbs">126-150 lbs</option>
+                <option value="151+ lbs">150+ lbs</option>
+            </select>
+            <br>       
+    
+            <label for="measure">Can measure with accuracy to: </label>
+            <select name="measure" id="measure" type="select" class="form-control"  > 
+                <option value="1/4 inch" selected>1/4 inch</option>
+                <option value="1/8 inch">1/8 inch</option>
+                <option value="1/16 inch">1/16 inch</option>
+                <option value="1/32 inch">1/32 inch</option>
+                <option value="1/64 inch">1/64 inch</option>
+            </select>
+            <br>
+
+            <label for="powertools">Can operate power tools (saws, drills, etc): </label>
+            <select name="powertools" id="powertools" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="need guidance to operate">need guidance to operate</option>
+                <option value="need supervision to operate">need supervision to operate</option>
+                <option value="very skilled with power tools">very skilled with power tools</option>
+            </select>
+            <br>       
+
+
+            <label for="machinery">Can operate most small engine machinery (lawn mower, power washer, augers, etc.): </label>
+            <select name="machinery" id="machinery" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="need guidance to operate">need guidance to operate</option>
+                <option value="need supervision to operate">need supervision to operate</option>
+                <option value="very skilled with small engine machinery">very skilled with power tools</option>
+            </select>
+            <br>       
+        
+            <label for="heights">Comfortable working at heights of: </label>
+            <select name="heights" id="heights" type="select" class="form-control"  > 
+                <option value="ground work only">ground work only</option>
+                <option value="5-10 feet" selected>5-10 feet</option>
+                <option value="11-15 feet">11-15 feet</option>
+                <option value="16-20 feet">16-20 feet</option>
+                <option value="21-25 feet">21-25 feet</option>
+                <option value="26+ feet">26+ feet</option>
+            </select>
+            <br>       
+
+            <label>Indicate your skill level from 0 (no experience) to 10 (expert, no guidance required):</label>
+            <br>
+
+            <label for="carpentry">Proficient in woodworking and comfortable using all types of woodworking equipment: </label>
+            <select name="carpentry" id="carpentry" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+
+            </select>
+            <br>   
+
+            <label for="masonry">Proficient in brick and stone masonry and comfortable using all types of masonry equipment and chemicals: </label>
+            <select name="masonry" id="masonry" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>       
+
+            <label for="doors">Knowledgeable and comfortable replacing/repairing old windows and doors: </label>
+            <select name="doors" id="doors" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>       
+
+            <label for="demolition">Knowledgeable and comfortable with safety protocols for small-scale demolition: </label>
+            <select name="demolition" id="demolition" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>     
+
+            <label for="drywall">Able to quickly and efficiently cut, install, and mud drywall: </label>
+            <select name="drywall" id="drywall" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>       
+    
+            <label for="electrical">Able to operate a fuse-box, use a multimeter to test an outlet, and perform simple electrical rewiring or installation: </label>
+            <select name="electrical" id="electrical" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>       
+
+            <label for="plumbing">Able to operate a drain snake, install toilets, showers/bath tubs, and sinks, faucet replacement, and garbage disposal replacement: </label>
+            <select name="plumbing" id="plumbing" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>     
+
+            <label for="flooring">Able to operate a wet saw for cutting tiles, proficient in tricky cuts and angled measurements: </label>
+            <select name="flooring" id="flooring" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>    
+
+            <label for="painting">Able to evenly and cleanly paint interior walls and cabinets, as well as exterior walls and accents: </label>
+            <select name="painting" id="painting" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>      
+
+            <label for="murals"> Experience painting large-scale scenery or character murals: </label>
+            <select name="murals" id="murals" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>     
+    
+            <label for="mounting"> Experience mounting TVs and large furniture to walls (interior and exterior) </label>
+            <select name="mounting" id="mounting" type="select" class="form-control"  > 
+                <option value="no experience" selected>no experience</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="expert">expert</option>
+            </select>
+            <br>       
+
+            <label>Tools you own:</label>
+            <br>
+
+            <input name="handtools" id="handtools" type="checkbox" class="form-control"  /> 
+            <label for="handtools">Hand tools (hammers, screwdriver with interchangeable bits, bit set (including phillips, flathead, square, star, and allen), basic level, square, tape measurer, pliers, utility knife, etc.)</label>
+            <br>
+
+            <input name="drills" id="drills" type="checkbox" class="form-control"  /> 
+            <label for="drills">Drill set (screw gun, hammer drill, or impact driver, etc.)</label>
+            <br>
+
+            <input name="saws" id="saws" type="checkbox" class="form-control"  /> 
+            <label for="saws">Power saws (circular saw, skill saw, jigsaw, oscillator saw, coping saw, miter saw, or chainsaw, etc.)</label>
+            <br>
+
+            <input name="nailgun" id="nailgun" type="checkbox" class="form-control"  /> 
+            <label for="nailgun">Nail guns (framing, brad, finish, siding, or roofing nail guns) </label>
+            <br>
+
+            <input name="vac" id="vac" type="checkbox" class="form-control"  /> 
+            <label for="vac">Wet/Dry vacuum with at least 3 attachments</label>
+            <br>
+
+            <label for="othertools">Other useful tools you own: </label>
+            <br>
+            <textarea  name="othertools" id="othertools" type="text" placeholder="List any other tools you own that may be useful to this position here" class="form-control" ></textarea>
+            <br>
+
+
+
+
+
+            <label for="letter">Additional Details: </label>
+            <br>
+            <textarea name="letter" id="letter" type="text" placeholder="Write a cover letter or message here." class="form-control" ></textarea>
+            <br>
+
+            <label for="resume">Submit your resume: </label>
+            <br>
+            <a href="mailto:joshua@schmidtshomeservices.com">Click Here to Submit Your Resume</a>
+            <br>
+
+            <button type="submit">Submit</button>
+            
+        </form>
+
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+
+                <a href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Fwww.schmidtshomeservice.com%2F&display=popup&ref=plugin&src=share_button"><i class="fa-brands fa-square-facebook"></i></a>
+
+                <a href="https://g.page/r/CdLW2QpxWqmYEBE/review"><i class="fa-brands fa-google"></i></a>
+
+                <a href="https://www.yelp.com/writeareview/biz/csYuAs7z15ixXz1dKkp4gw?return_url=%2Fbiz%2FcsYuAs7z15ixXz1dKkp4gw&review_origin=biz-details-war-button"><i class="fa-brands fa-yelp"></i></a>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="left">
+                    &copy 2022 Schmidt's Home Services All Rights Reserved
+                </div>
+                <div class="right">
+                    Engineered By: Penny Nichols
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
