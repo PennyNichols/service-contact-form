@@ -9,9 +9,164 @@
 </head>
 <body>
     
-    <section class="s1" id="contact">
+    <section class="s-img" id="reviews">
 
-        <h2>Contact Us</h2>
+        <h2 class="section-title">Our Reviews</h2>
+
+        <div class="reviews-wrapper">
+
+            <div class="review-wrapper">
+
+                <div><img src="review-1.jpg" alt="Five-star client review photo" class="review-img"></div>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div>
+                    <p>"Schmidt's Home Services more than exceeded our expectations!"</p>
+                </div>
+
+                <div>
+                    <h3>Anna</h3>
+                </div>
+
+                <div>
+                    <h4>Satisfied Client</h4>
+                </div>
+
+            </div>
+            
+            <div class="review-wrapper">
+
+                <div><img src="review-2.jpg" alt="Five-star client review photo" class="review-img"></div>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div>
+                    <p>"Schmidt's Home Services patience, professionalism, and transparency are among the best I've ever encountered!</p>
+                </div>
+
+                <div>
+                    <h3>Hannah</h3>
+                </div>
+
+                <div>
+                    <h4>Satisfied Client</h4>
+                </div>
+
+            </div>
+
+            <div class="review-wrapper">
+
+                <div><img src="review-3.jpg" alt="Five-star client review photo" class="review-img"></div>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div>          
+                    <p>"Easy to get in touch with, quick scheduling, and work was done to complete satisfaction!"</p>
+
+                </div>
+
+                <div>
+                    <h3>Peter</h3>
+                </div>
+
+                <div>
+                    <h4>Satisfied Client</h4>
+                </div>
+
+            </div>
+
+            <div class="review-wrapper">
+
+                <div><img src="review-4.jpg" alt="Five-star client review photo" class="review-img"></div>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div>
+                    <p>"The gentlemen at Schmidt's were very professional, prompt, and informative!"</p>
+                </div>
+
+                <div>
+                    <h3>Ashley</h3>
+                </div>
+
+                <div>
+                    <h4>Satisfied Client</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="s-1" id="about">
+
+        <h2 class="section-title">About Schmidt's Home Services</h2>
+
+        <div class="about-wrapper">
+            <img src="family quote.jpg" class="about-photo"  alt="family owned company">
+            <p>Schmidt's Home Services is a family-owned company with over 15 years of experience in the construction industry. The owners, Joshua, Penny, Melody, and Gibson, founded Schmidt's after moving to Birmingham from Michigan at the end of 2019. Joshua maintains current business operations while Penny has migrated toward the technical side of things, and the children handle project review at the end of each day. The whole family takes a role in every project. While the kiddos may just be telling Mommy and Daddy if they like the final product or not, they have their role. <br><br>Here at Schmidt's, we do the work so you don't have to. We have serviced a lot of folks around the Birmingham area and have received impressive reviews on our exceptional work. In these uncertain times, wouldn't it be nice to have just one company that can handle all of your household service needs? Stop rotating through company after company with what seems like never-ending streams of workers in and out of your home. Avoid the hassle and hire Schmidt's Home Services to get the job done quickly and accurately the first time!</p> 
+        </div>
+
+    </section>
+
+    <section class="s-img" id="operating-hours">
+        <h2 class="section-title">Operating Hours</h2>
+        <div class="operating-hours-wrapper">
+            <div class="clock">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="hours-wrapper">
+                <div class="regular-hours">
+                    <p>Regular Hours  :</p>   
+                    <p>8 AM - 5 PM    Monday - Friday</p>
+                </div>
+                <div class="emergency-hours">
+                    <p>Services are available outside of regular business hours at our emergency rate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-1" id="contact">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-wrapper">
+            <div class="contact-call">
+                <a href=tel:"2058341649"><i class="fa-solid fa-square-phone"></i></a>
+                <h3>Call</h3>
+            </div>
+            <div class="contact-email">
+                <a href="mailto:joshua@schmidtshomeservices.com"><i class="fa-solid fa-square-envelope"></i></a>
+                <h3>Email</h3>
+            </div>
+        </div>
 
         <form id="appointment" method="POST" action="/api/appointments">
             <h1>Online Appointment Request Form</h1>
@@ -82,9 +237,14 @@
             
         </form>
 
+        <div class="appointment-list">
+            <h2 id="services"></h2>
+            <ul id="consultations" class="list-group"></ul>
+        </div>
+
     </section>
 
-    <section class="s2" id="apply">
+    <section class="s-2" id="apply">
 
         <h2 class="s2">Now Hiring!</h2>
 
@@ -486,7 +646,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="left">
-                    &copy 2022 Schmidt's Home Services All Rights Reserved
+                    &copy 2022 <span>Schmidt's Home Services</span> All Rights Reserved
                 </div>
                 <div class="right">
                     Engineered By: Penny Nichols
