@@ -1,3 +1,4 @@
+
 const express = require('express');
 const morgan = require('morgan');
 const { Prohairesis } = require('prohairesis');
@@ -60,7 +61,7 @@ app
             message: body.message,
 
         })
-        res.json("Request Successful!");
+        res.json("Appointment Request Successful!");
     })
 
 
@@ -237,3 +238,4 @@ app
     })
 
     .listen(port, () => console.log(`server listening on port ${port}`));
+
