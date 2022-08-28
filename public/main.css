@@ -14,8 +14,29 @@ section{
 }
 
 /* --------------------Gallery------------------- */
+#gallery{
+    margin: 3rem auto;
+}
 
+#gallery .container{
+    margin: 2rem auto;
+    position: relative;
+}
 
+#gallery .control{
+    position:absolute;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    z-index: 10;
+    line-height: 20rem;
+    vertical-align: middle;
+}
+
+#gallery img{
+    height: 20rem;
+}
 
 /* ----------------End-Gallery------------------- */
 
