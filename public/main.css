@@ -25,7 +25,7 @@ section{
     width: 100%;
     background-color: blue;
     color: white;
-    display: flex;
+    display: flexbox;
 }
 
 #logo{
@@ -38,6 +38,11 @@ section{
     padding: .5rem .7rem;
 }
 
+#navigation .navbar-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
 #navigation .nav-item{
     display: inline;
     list-style: none;
@@ -47,6 +52,11 @@ section{
     text-decoration: none;
     display: inline-block;
     color: white;
+    line-height: 4rem;
+}
+
+#navigation .toggle-collapse{
+    float:right !important;
 }
 
 /* --------------------End Nav------------------- */
