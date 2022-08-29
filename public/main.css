@@ -21,14 +21,32 @@ section{
 
 /* --------------------Nav------------------- */
 
-.navbar{
+#navigation .navbar{
     width: 100%;
     background-color: blue;
     color: white;
+    display: flex;
 }
 
 #logo{
-    height: 5rem;
+    height: 3rem;
+}
+
+#navigation .logo{
+    float: left;
+    text-decoration: none;
+    padding: .5rem .7rem;
+}
+
+#navigation .nav-item{
+    display: inline;
+    list-style: none;
+}
+
+#navigation a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
 }
 
 /* --------------------End Nav------------------- */
