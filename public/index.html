@@ -8,9 +8,6 @@
     <script src="https://kit.fontawesome.com/0fd59fe5a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/mdb.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -19,37 +16,38 @@
 <body>
     <a href="#apply">CLICK HERE TO APPLY</a>
 
-    <nav id="navigation" class="nav navbar navbar-expand-lg sticky-top">
-        <a class="logo" href="index.html"><i class="fas fa-toolbox"></i><br><span id="shs">SHS</span></a>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><img id="logo" src="./images/logo.png" alt="Schmidt's Home Services logo"></a>
     
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i id="toggler" class="fas fa-toolbox"></i>
-        </button>
+            <button class="toggle-collapse">
+                <i class="fas fa-toolbox"></i><span class="hidden">menu</span>
+            </button>
     
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="services.html"><span id="nav">Services</span> </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery"><span id="nav">Gallery</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#reviews"><span id="nav">Reviews</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about"><span id="nav">About</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact"><span id="nav">Contact</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#operating-hours"><span id="nav"><i class="fas fa-clock"></i></span></a>
-                </li>
-            </ul>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews">Reviews></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#operating-hours"><i class="fas fa-clock"></i>Hours</a>
+                    </li>
+                </ul>
+            </div>
+    
         </div>
-    
-    
     </nav>
 
     <section class="s-1" id="services">
@@ -899,7 +897,6 @@
 
 <script src="main.js" ></script>
 
-<!-- Makes the drop down tool-box menu work -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

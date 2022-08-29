@@ -1,13 +1,4 @@
 
-$(document).ready(function() {
-	const nav = $("#navigation");
-	
-})
-
-let menu = document.querySelector('#toggler');
-menu.onclick = () =>{
-    menu.classList.toggle('fa-times');
-}
 
 var gallerySlider = tns({
     container: ".gallery-slider",
