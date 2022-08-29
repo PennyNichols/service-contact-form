@@ -13,6 +13,40 @@ section{
     justify-content: center;
 }
 
+
+
+
+/* --------------------Nav------------------- */
+#toggler.fa-times{
+  
+    transition: .2s linear;
+  }
+  
+  #toggler{
+      font-size: 3rem;
+      transition: .2s linear;
+      color:var(--lgtTextColor);
+  }
+  #toggler:hover{
+      transform: scale(1.2);
+      transition: .5s;
+      color: var(--lgtAccentColor);
+  }
+  
+  .navbar-toggler{
+      outline: none!important;
+  }
+  
+  .fixedNav #navigation {
+      position: fixed;
+      top: 0;
+  }
+
+
+/* --------------------End Nav------------------- */
+
+
+
 /* --------------------Gallery------------------- */
 #gallery{
     margin: 3rem auto;
