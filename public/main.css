@@ -30,14 +30,26 @@ section{
     list-style-type: none;
     justify-content: space-between;
     z-index: 10;
-    line-height: 20rem;
+    line-height: 25rem;
     vertical-align: middle;
 }
 
-#gallery img{
-    height: 20rem;
+#gallery .control i{
+    font-size: 3rem;
 }
 
+#gallery .next{
+    padding-right: 2rem;
+}
+
+#gallery .prev{
+    padding-left: 2rem;
+}
+
+#gallery img{
+    height: 25rem;
+    object-fit: cover;
+}
 /* ----------------End-Gallery------------------- */
 
 #reviews img, #about img{
