@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root{
+    --mainFont: 'Roboto', sans-serif;
+}
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: var(--mainFont);
 }
 
 section{
@@ -21,42 +26,125 @@ section{
 
 /* --------------------Nav------------------- */
 
-#navigation .navbar{
+#navigation{
+    background: blue;
     width: 100%;
-    background-color: blue;
-    color: white;
-    display: flexbox;
+    z-index: 9999;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
-#logo{
-    height: 3rem;
+#navigation .nav-wrapper{
+    width: 100%;
+    display: table;
 }
 
 #navigation .logo{
     float: left;
-    text-decoration: none;
-    padding: .5rem .7rem;
 }
 
-#navigation .navbar-nav{
+#logo{
+    height: 4rem;
+    border-radius: .7rem;
+}
+
+#logo:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+
+
+#navigation .nav-links{
     display: flex;
     justify-content: space-around;
-}
-
-#navigation .nav-item{
-    display: inline;
     list-style: none;
-}
-
-#navigation a{
-    text-decoration: none;
-    display: inline-block;
-    color: white;
     line-height: 4rem;
+    vertical-align: middle;
 }
 
-#navigation .toggle-collapse{
-    float:right !important;
+#navigation .nav-links a,
+#navigation .nav-links a i{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: all .7s;
+    font-size: 1.2rem;
+}
+
+#navigation .nav-links a:hover,
+#navigation .nav-links a i:hover{
+    color: red;
+    font-size: 1.4rem;
+}
+
+#navigation .toggler{
+    float: right;
+    color: white;
+    cursor: pointer;
+    display: none;
+    padding-top: .5rem;
+    padding-right: .5rem;
+}
+
+#navigation .toggler i{
+    font-size: 3rem;
+}
+
+@media (max-width: 800px){
+    #navigation .nav-links a,
+    #navigation .nav-links a i{
+        font-size: 1rem;
+    }
+
+    #navigation .nav-links a:hover,
+    #navigation .nav-links a i:hover{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 650px){
+    #navigation .nav-links a,
+    #navigation .nav-links a i{
+        font-size: .8rem;
+    }
+
+    #navigation .nav-links a:hover,
+    #navigation .nav-links a i:hover{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 550px){
+    #navigation .nav-links a,
+    #navigation .nav-links a i{
+        font-size: 1.2rem;
+    }
+
+    #navigation .nav-links a:hover,
+    #navigation .nav-links a i:hover{
+        font-size: 1.4rem;
+    }
+
+    #navigation .nav-links{
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        display: none;
+    }
+
+    #navigation .toggler{
+        display: block;
+    }
+
+    .collapse{
+        display: flex !important;
+    }
 }
 
 /* --------------------End Nav------------------- */

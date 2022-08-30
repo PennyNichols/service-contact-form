@@ -1,4 +1,11 @@
-
+$(document).ready(function(){
+    $(".toggler").click(function(){
+        $(".nav-links").toggleClass("collapse");
+    });
+    $(".nav-links a").click(function(){
+        $(".nav-links").toggleClass("collapse");
+    });
+});
 
 var gallerySlider = tns({
     container: ".gallery-slider",

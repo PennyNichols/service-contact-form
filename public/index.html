@@ -9,46 +9,36 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 </head>
 <body>
     <a href="#apply">CLICK HERE TO APPLY</a>
 
-    <nav id="navigation">
-        <div class="navbar">
-            <a class="logo" href="index.html"><img id="logo" src="./images/logo.png" alt="Schmidt's Home Services logo"></a>
-    
-            <button class="toggle-collapse">
-                <i class="fas fa-toolbox"></i>
-            </button>
-    
-            <div class="navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#reviews">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#operating-hours"><i class="fas fa-clock"></i><span class="hidden">Hours</span></a>
-                    </li>
-                </ul>
+    <nav class="nav-area" id="navigation">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="index.html"><img id="logo" src="./images/logo.png" alt="Schmidt's Home Services logo"></a>
             </div>
-    
+
+            <div class="toggler">
+                <i class="fas fa-toolbox"></i>                
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Schedule</a></li>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#operating-hours"><i class="fas fa-clock"></i></a></li>
+            </ul>
+
         </div>
     </nav>
+    
 
     <section class="s-1" id="services">
 
@@ -896,6 +886,7 @@
     </footer>
 
 <script src="main.js" ></script>
+
 
 
 </body>
