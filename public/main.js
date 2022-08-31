@@ -1,9 +1,11 @@
 $(document).ready(function(){
     $(".toggler").click(function(){
         $(".nav-links").toggleClass("collapse");
+        $(".toggler i").toggleClass("hidden");
     });
     $(".nav-links a").click(function(){
         $(".nav-links").toggleClass("collapse");
+        $(".toggler i").toggleClass("hidden");
     });
 });
 

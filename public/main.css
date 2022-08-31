@@ -2,6 +2,13 @@
 
 :root{
     --mainFont: 'Roboto', sans-serif;
+    --blueText: #010B9B;
+    --redText: #CA0202;
+    --whiteText: white;
+    --boxShadow: 3px 3px 8px 3px rgba(0,0,0,0.48);
+    --blueAccent: blue;
+    --redAccent: #c40101;
+
 }
 
 *{
@@ -12,14 +19,15 @@
     font-family: var(--mainFont);
 }
 
-section{
-    width: 95%;
-    align-items: center;
-    justify-content: center;
+.section-title{
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blueText);
 }
 
 .hidden{
-    visibility: hidden;
+    display:none;
 }
 
 /* --------------------Hero------------------- */
@@ -69,6 +77,77 @@ section{
     flex-direction: column;
     text-align: center;
 }
+
+#hero h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px white;
+    color: var(--blueText);
+    letter-spacing: .2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+#hero h2{
+    font-size: 1.5rem;
+    color: var(--whiteText);
+    letter-spacing: .1rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+#hero .hero-btns-wrapper{
+    width: 100vw;
+}
+
+#hero .hero-btns{
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero .hero-btns a{
+    text-decoration: none;
+    color: var(--redText);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 3px solid var(--redText);
+    padding: .5rem .75rem;
+    border-radius: .3rem;
+    transition: .5s;
+}
+
+#hero .hero-btns a:hover{
+    transform: scale(1.2);
+    background-color: var(--blueText);
+    color: var(--whiteText);
+    border-color: var(--whiteText);
+}
+
+@media (max-width: 950px){
+    #hero .hero-btns-wrapper{
+        width: 20rem;
+    }
+
+    #hero .hero-btns{
+        flex-direction: column;
+    }
+
+    #hero .hero-btns a{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 550px){
+    #hero h1{
+        font-size: 3rem;
+    }
+    #hero h2{
+        font-size: 1rem;
+    }
+    #hero .hero-btns a{
+        font-size: 1rem;
+    }
+}
 /* --------------------End Hero------------------- */
 
 
@@ -81,6 +160,7 @@ section{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    box-shadow: var(--boxShadow);
 }
 
 #navigation .nav-wrapper{
@@ -110,6 +190,7 @@ section{
     list-style: none;
     line-height: 4rem;
     vertical-align: middle;
+    transition: all .5s;
 }
 
 #navigation .nav-links a,
@@ -196,6 +277,27 @@ section{
 }
 
 /* --------------------End Nav------------------- */
+
+/* --------------------Services------------------- */
+#services .services-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#services .service-card{
+    width: 12rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+#services .service-card a{
+    text-decoration: none;
+
+}
+
+
+/* --------------------End Services------------------- */
 
 
 
