@@ -8,6 +8,7 @@
     --boxShadow: 3px 3px 8px 3px rgba(0,0,0,0.48);
     --blueAccent: blue;
     --redAccent: #c40101;
+    --mainBG: #F2F1FF;
 
 }
 
@@ -19,11 +20,29 @@
     font-family: var(--mainFont);
 }
 
+body{
+    background-color: var(--mainBG);
+}
+
+#services,
+#gallery,
+#reviews,
+#about,
+#contact,
+#apply{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .section-title{
     margin: 3rem auto;
     text-align: center;
     font-size: 1.8rem;
     color: var(--blueText);
+}
+
+.s-1{
+    background-color: var(--mainBG);
 }
 
 .hidden{
@@ -285,15 +304,72 @@
     justify-content: center;
 }
 
-#services .service-card{
-    width: 12rem;
-    margin: 1rem;
-    text-align: center;
-}
 
 #services .service-card a{
     text-decoration: none;
+}
 
+#services .service-card i{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+#services .service-card h4{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+#services .service-card p{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+#services .service-card{
+    width: 15rem;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    border-radius: .3rem;
+    padding: 1rem .5rem;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+#services .service-card::before {
+    content: '';
+    position: absolute;
+    background: var(--redText);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 1s;
+    z-index: -1;
+}
+
+#services .service-card:hover::before {
+    background: var(--blueAccent);
+    top: 0;
+    border-radius: 0px;
+}
+
+#services .service-content .drk{
+    color: var(--blueAccent);
+    transition: all 1s;
+}
+
+#services .service-content .md{
+    color: var(--redText);
+}
+
+#services .service-content:hover .drk{
+    color: var(--redText);
+}
+#services .service-content:hover .md{
+    color: var(--whiteText);
 }
 
 
@@ -303,7 +379,7 @@
 
 /* --------------------Gallery------------------- */
 #gallery{
-    margin: 3rem auto;
+    margin: 2rem;
 }
 
 #gallery .container{
@@ -324,6 +400,12 @@
 
 #gallery .control i{
     font-size: 3rem;
+    color: var(--redAccent);
+    transition: .5s;
+}
+
+#gallery .control i:hover{
+    font-size: 3.5rem;
 }
 
 #gallery .next{
@@ -332,6 +414,24 @@
 
 #gallery .prev{
     padding-left: 2rem;
+}
+
+#gallery .tns-nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#gallery .tns-nav button {
+    height: .5rem;
+    width: .5rem;
+    margin: .25rem;
+    background-color: var(--blueAccent);
+    border: none;
+    border-radius: 50%;
+}
+
+#gallery .tns-nav .tns-nav-active {
+    background-color: var(--redAccent);
 }
 
 #gallery img{
