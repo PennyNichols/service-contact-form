@@ -24,18 +24,23 @@ body{
     background-color: var(--mainBG);
 }
 
+section{
+    display: block;
+    width: 100%;
+}
+
 #services,
+#attributes,
 #gallery,
 #reviews,
 #about,
 #contact,
-#apply{
-    margin-left: 2rem;
-    margin-right: 2rem;
+#apply,
+#operating-hours{
+    padding: 2rem;
 }
 
 .section-title{
-    margin: 3rem auto;
     text-align: center;
     font-size: 1.8rem;
     color: var(--blueText);
@@ -43,6 +48,14 @@ body{
 
 .s-1{
     background-color: var(--mainBG);
+}
+
+.s-img{
+    background-image:linear-gradient(rgba(255, 0, 0, 0.64)0%, rgba(255, 61, 61, 0.648) 5%, rgba(255, 199, 199, 0.664) 40%, rgba(215, 218, 247, 0.679) 76%, rgba(129, 137, 246, 0.7) 94%, rgba(75, 69, 246, 0.523) 100%),
+    url(./images/flag.jpg);
+    background-position: relative;
+    background-attachment: fixed;
+
 }
 
 .hidden{
