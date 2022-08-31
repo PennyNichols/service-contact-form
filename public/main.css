@@ -386,8 +386,56 @@ section{
     color: var(--whiteText);
 }
 
-
 /* --------------------End Services------------------- */
+
+/* --------------------Attributes------------------- */
+#attributes .attributes-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+#attributes .attribute{
+    color: var(--blueAccent);
+    text-align: center;
+    margin: 1rem;
+}
+
+#attributes .attribute i{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+#attributes .attribute span{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 850px){
+    #attributes .attribute i{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    
+    #attributes .attribute span{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px){
+    #attributes .attributes-wrapper{
+        flex-direction: column;        
+    }
+    
+    #attributes .attribute i{
+        font-size: 3rem;
+        margin: 1rem;
+    }
+    
+    #attributes .attribute span{
+        font-size: 1.5rem;
+    }
+
+}
+/* --------------------End Attributes------------------- */
 
 
 
