@@ -392,9 +392,7 @@ section{
 
 
 /* --------------------Gallery------------------- */
-#gallery{
-    margin: 2rem;
-}
+
 
 #gallery .container{
     margin: 2rem auto;
@@ -416,6 +414,7 @@ section{
     font-size: 3rem;
     color: var(--redAccent);
     transition: .5s;
+    cursor: pointer;
 }
 
 #gallery .control i:hover{
