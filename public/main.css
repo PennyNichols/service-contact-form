@@ -440,17 +440,25 @@ section{
 
 #reviews .reviews-wrapper{
     display: flex;
+    justify-content: space-around;
 }
 
 #reviews .review-wrapper{
     background-color: white;
     justify-content: center;
+    text-align: center;
+    object-position: center;
+    box-shadow: var(--boxShadow);
+    width: 15rem;
 }
 
 #reviews .review-wrapper img{
     border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
     margin: 1rem;
-
+    box-shadow: var(--boxShadow);
 }
 
 /* --------------------End Reviews------------------- */
