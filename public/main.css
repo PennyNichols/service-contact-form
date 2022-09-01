@@ -442,8 +442,15 @@ section{
     display: flex;
 }
 
+#reviews .review-wrapper{
+    background-color: white;
+    justify-content: center;
+}
+
 #reviews .review-wrapper img{
     border-radius: 50%;
+    margin: 1rem;
+
 }
 
 /* --------------------End Reviews------------------- */
