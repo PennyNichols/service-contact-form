@@ -442,6 +442,10 @@ section{
     display: flex;
 }
 
+#reviews .review-wrapper img{
+    border-radius: 50%;
+}
+
 /* --------------------End Reviews------------------- */
 
 
