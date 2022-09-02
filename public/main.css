@@ -42,7 +42,7 @@ section{
 
 .section-title{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: var(--blueText);
     margin-bottom: 3.5rem;
 }
@@ -573,20 +573,60 @@ section{
 /* --------------------About Us------------------- */
 #about .about-wrapper{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
 #about img{
-    max-width: 40rem;
+    max-width: 35rem;
     height: auto;
     border-radius: .4rem;
     box-shadow: var(--boxShadow);
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    
+
 }
 
+#about p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--redText);
+    text-align: justify;
+    padding: 0 4rem;
+}
 
+@media (max-width: 1500px){
+    #about .about-wrapper{
+        flex-direction: column;
+    }
+
+    #about img{
+        margin-bottom: 3rem;
+    }
+
+    #about p{
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 900px){
+    #about img{
+        max-width: 30rem;
+    }
+
+    #about p{
+        padding:0 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    #about p{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    #about img{
+        max-width: 20rem;
+    }
+}
 /* --------------------End About Us------------------- */
 #reviews img{
     width: 5rem;
