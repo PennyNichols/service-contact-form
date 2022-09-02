@@ -19,8 +19,17 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: var(--mainFont);
+    font-family: var(--secondaryTitleFont);
 }
+
+p{
+    font-weight: 500;
+}
+
+a{
+    font-weight: 500;
+}
+
 
 body{
     background-color: var(--mainBG);
@@ -44,11 +53,11 @@ section{
 
 .section-title{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--blueText);
     margin-bottom: 3.5rem;
     font-family: var(--secondaryTitleFont);
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .s-1{
@@ -130,8 +139,9 @@ section{
     font-size: 1.5rem;
     color: var(--whiteText);
     letter-spacing: .1rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 3rem;
+    font-family: var(--secondaryTitleFont);
 }
 
 #hero .hero-btns-wrapper{
@@ -763,7 +773,7 @@ section{
     position:absolute;
     bottom: 0;
     left: 0;
-    width: 12rem;
+    width: 13rem;
 }
 
 #footer .copywrite span{
