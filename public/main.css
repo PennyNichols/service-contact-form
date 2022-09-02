@@ -824,10 +824,11 @@ section{
 
 /* --------------------Header------------------- */
 #header{
-    background-image:linear-gradient(rgba(118, 113, 255, 0.523)0%, rgba(129, 137, 246, 0.7) 5%, rgba(215, 218, 247, 0.679) 40%, rgba(225, 173, 173, 0.664) 76%, rgba(224, 76, 76, 0.648) 94%, rgba(213, 17, 17, 0.64) 100%),
+    background-image:linear-gradient(rgba(224, 76, 76, 0.648) 0%, rgba(129, 137, 246, 0.7) 74%, rgba(75, 69, 246, 0.523) 100%),
     url(./images/flag.jpg);
     background-position: relative;
     background-attachment: fixed;
+    height: 20rem;
 
 }
 
@@ -837,6 +838,7 @@ section{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    height: 20rem;
 }
 
 #header h1{
