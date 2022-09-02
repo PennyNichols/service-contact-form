@@ -888,6 +888,139 @@ section{
 }
 /* --------------------End Header------------------- */
 
+/* --------------------Services.html------------------- */
+
+#helping-hand .container,
+#construction .container,
+#assembly .container,
+#home-repairs .container,
+#painting .container,
+#demolition .container,
+#junk-removal .container,
+#delivery .container{
+    margin: 2rem auto;
+    position: relative;
+}
+
+#helping-hand .control,
+#construction .control,
+#assembly .control,
+#home-repairs .control,
+#painting .control,
+#demolition .control,
+#junk-removal .control,
+#delivery .control{
+    position:absolute;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    z-index: 10;
+    line-height: 25rem;
+    vertical-align: middle;
+}
+
+#helping-hand .control i,
+#construction .control i,
+#assembly .control i,
+#home-repairs .control i,
+#painting .control i,
+#demolition .control i,
+#junk-removal .control i,
+#delivery .control i{
+    font-size: 3rem;
+    color: var(--redAccent);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#helping-hand .control i:hover,
+#construction .control i:hover,
+#assembly .control i:hover,
+#home-repairs .control i:hover,
+#painting .control i:hover,
+#demolition .control i:hover,
+#junk-removal .control i:hover,
+#delivery .control i:hover{
+    font-size: 3.5rem;
+}
+
+#helping-hand .next,
+#construction .next,
+#assembly .next,
+#home-repairs .next,
+#painting .next,
+#demolition .next,
+#junk-removal .next,
+#delivery .next{
+    padding-right: 1rem;
+}
+
+#helping-hand .prev,
+#construction .prev,
+#assembly .prev,
+#home-repairs .prev,
+#painting .prev,
+#demolition .prev,
+#junk-removal .prev,
+#delivery .prev{
+    padding-left: 1rem;
+}
+
+#helping-hand .tns-nav,
+#construction .tns-nav,
+#assembly .tns-nav,
+#home-repairs .tns-nav,
+#painting .tns-nav,
+#demolition .tns-nav,
+#junk-removal .tns-nav,
+#delivery .tns-nav{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#helping-hand .tns-nav button,
+#construction .tns-nav button,
+#assembly .tns-nav button,
+#home-repairs .tns-nav button,
+#painting .tns-nav button,
+#demolition .tns-nav button,
+#junk-removal .tns-nav button,
+#delivery .tns-nav button{
+    height: .5rem;
+    width: .5rem;
+    margin: .25rem;
+    background-color: var(--blueAccent);
+    border: none;
+    border-radius: 50%;
+}
+
+#helping-hand .tns-nav .tns-nav-active,
+#construction .tns-nav .tns-nav-active,
+#assembly .tns-nav .tns-nav-active,
+#home-repairs .tns-nav .tns-nav-active,
+#painting .tns-nav .tns-nav-active,
+#demolition .tns-nav .tns-nav-active,
+#junk-removal .tns-nav .tns-nav-active,
+#delivery .tns-nav .tns-nav-active{
+    background-color: var(--redAccent);
+}
+
+#helping-hand img,
+#construction img,
+#assembly img,
+#home-repairs img,
+#painting img,
+#demolition img,
+#junk-removal img,
+#delivery img{
+    height: 25rem;
+    object-fit: cover;
+}
+
+
+/* --------------------End Services.html------------------- */
+
 
 
 #reviews img{
