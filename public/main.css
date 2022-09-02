@@ -628,6 +628,36 @@ section{
     }
 }
 /* --------------------End About Us------------------- */
+
+/* --------------------Operating Hours------------------- */
+#operating-hours{
+    text-align: center;
+    color: var(--blueAccent);
+}
+
+#operating-hours i{
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+#operating-hours .section-title{
+    font-size: 4rem;
+    color: var(--blueAccent);
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+}
+
+#operating-hours p{
+    font-size: 2rem;
+}
+
+#operating-hours p:first-of-type{
+    margin-bottom: 2rem;
+}
+
+
+
+/* --------------------End Operating Hours------------------- */
 #reviews img{
     width: 5rem;
     height: auto;
