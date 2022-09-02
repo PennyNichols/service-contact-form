@@ -215,8 +215,6 @@ section{
     transition: 1s;
 }
 
-
-
 #navigation .nav-links{
     display: flex;
     justify-content: space-around;
@@ -321,7 +319,6 @@ section{
     align-items: stretch;
 }
 
-
 #services .service-card a{
     text-decoration: none;
 }
@@ -385,6 +382,7 @@ section{
 #services .service-content:hover .drk{
     color: var(--redText);
 }
+
 #services .service-content:hover .md{
     color: var(--whiteText);
 }
@@ -1019,12 +1017,6 @@ section{
     object-fit: cover;
 }
 
-
 /* --------------------End Services.html------------------- */
 
 
-
-#reviews img{
-    width: 5rem;
-    height: auto;
-}
