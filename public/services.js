@@ -10,11 +10,25 @@ var helpingHandSlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#helping-hand-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",
@@ -35,11 +49,25 @@ var constructionSlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#construction-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",
@@ -60,11 +88,25 @@ var assemblySlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#assembly-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",
@@ -86,11 +128,25 @@ var homeRepairsSlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#home-repairs-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",
@@ -111,11 +167,25 @@ var paintingSlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#painting-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",
@@ -136,11 +206,25 @@ var demolitionSlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#demolition-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",
@@ -161,11 +245,25 @@ var junkRemovalSlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#junk-removal-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",
@@ -186,11 +284,25 @@ var deliverySlider = tns({
     autoplayButtonOutput: false,
     controlsContainer: "#delivery-control",
     responsive: {
-      0: {
-        items: 1,
-        nav: false
+      1600: {
+          items: 4,
+          gutter: 20
+      },
+      1024: {
+          items: 3,
+          gutter: 20
+      },
+      768: {
+          items: 2,
+          gutter: 20
+      },
+      480: {
+          items: 1
+      },
+      300: {
+          items: 1
       }
-    }
+  }
     // mode: 'gallery',
     // speed: 2000,
     // animateIn: "scale",

@@ -898,7 +898,7 @@ section{
 #demolition .container,
 #junk-removal .container,
 #delivery .container{
-    margin: 2rem auto;
+    margin: 2rem 1rem;
     position: relative;
 }
 
@@ -977,6 +977,7 @@ section{
 #delivery .tns-nav{
     text-align: center;
     margin-top: 1rem;
+    display: none;
 }
 
 #helping-hand .tns-nav button,
