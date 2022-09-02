@@ -558,6 +558,11 @@ section{
     margin: 1.5rem 0;
 }
 
+#reviews .star{
+    color: var(--blueAccent);
+    font-size: 1.7rem;
+}
+
 @media (max-width: 1200px){
     #reviews .reviews-wrapper{
         grid-template-columns: 1fr 1fr;
