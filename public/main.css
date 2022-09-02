@@ -146,7 +146,7 @@ section{
     border: 3px solid var(--redText);
     padding: .5rem .75rem;
     border-radius: .3rem;
-    transition: .5s;
+    transition: all .5s ease-in-out;
 }
 
 #hero .hero-btns a:hover{
@@ -212,7 +212,7 @@ section{
 
 #logo:hover{
     transform: rotate(360deg);
-    transition: 1s;
+    transition: all .5s ease-in-out;
 }
 
 #navigation .nav-links{
@@ -221,7 +221,7 @@ section{
     list-style: none;
     line-height: 4rem;
     vertical-align: middle;
-    transition: all .5s;
+    transition: all .5s ease-in-out;
 }
 
 #navigation .nav-links a,
@@ -372,7 +372,7 @@ section{
 
 #services .service-content .drk{
     color: var(--blueAccent);
-    transition: all 1s;
+    transition: all 1s ease-in-out;
 }
 
 #services .service-content .md{
@@ -483,7 +483,7 @@ section{
 #gallery .control i{
     font-size: 3rem;
     color: var(--redAccent);
-    transition: .5s;
+    transition: all .5s ease-in-out;
     cursor: pointer;
 }
 
@@ -697,7 +697,7 @@ section{
     justify-content: center;
     text-decoration: none;
     color: var(--redAccent);
-    transition: all 1s;
+    transition: all .5s ease-in-out;
 }
 
 #contact .contact a:hover{
@@ -775,7 +775,7 @@ section{
 #footer .social a{
     color: var(--redAccent);
     padding: 0 1rem;
-    transition: all .5s;
+    transition: all .5s ease-in-out;
 }
 
 #footer .social a:hover{
@@ -786,7 +786,7 @@ section{
 #footer .social a i{
     font-size: 1.5rem;
     padding-bottom: .4rem;
-    transition: all .5s;
+    transition: all .5s ease-in-out;
 }
 
 #footer .social a i:hover{
@@ -928,7 +928,7 @@ section{
 #delivery .control i{
     font-size: 3rem;
     color: var(--redAccent);
-    transition: .5s;
+    transition: all .5s ease-in-out;
     cursor: pointer;
 }
 
@@ -1053,12 +1053,31 @@ section{
 }
 
 .content a{
-    width: 20rem;
+    width: 30rem;
     display: flex;
     justify-content: space-between;
     margin: 3rem auto;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
 }
 
+.content a h3,
+.content a i{
+    font-size: 2rem;
+    color: var(--blueAccent);
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+}
+
+.content a:hover{
+    transform: scale(1.2);
+}
+
+.content a:hover h3,
+.content a:hover i{
+    color: var(--redAccent); 
+}
 /* --------------------End Services.html------------------- */
 
 
