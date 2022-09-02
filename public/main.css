@@ -212,7 +212,7 @@ section{
 
 #logo:hover{
     transform: rotate(360deg);
-    transition: all .5s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 
 #navigation .nav-links{
