@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chakra+Petch:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
     --mainFont: 'Roboto', sans-serif;
-    --blueText: #010B9B;
+    --mainTitleFont: 'Alfa Slab One', cursive;
+    --secondaryTitleFont: 'Chakra Petch', sans-serif;
+    --blueText: rgb(15, 15, 129);
     --redText: #CA0202;
     --whiteText: white;
     --boxShadow: 3px 3px 8px 3px rgba(0,0,0,0.48);
@@ -45,6 +47,8 @@ section{
     font-size: 2.5rem;
     color: var(--blueText);
     margin-bottom: 3.5rem;
+    font-family: var(--secondaryTitleFont);
+    font-weight: 700;
 }
 
 .s-1{
@@ -112,13 +116,14 @@ section{
 }
 
 #hero h1{
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     text-shadow: 2px 2px white;
     color: var(--blueText);
-    letter-spacing: .2rem;
-    font-weight: 900;
+    letter-spacing: .3rem;
+    font-weight: 500;
     margin-bottom: 2rem;
+    font-family: var(--mainTitleFont);
 }
 
 #hero h2{
@@ -847,8 +852,9 @@ section{
     text-shadow: 2px 2px white;
     color: var(--blueText);
     letter-spacing: .4rem;
-    font-weight: 900;
+    font-weight: 500;
     margin-top: 2rem;
+    font-family: var(--mainTitleFont);
 }
 
 #header h2{
