@@ -760,6 +760,7 @@ section{
     position:absolute;
     bottom: 0;
     left: 0;
+    width: 12rem;
 }
 
 #footer .copywrite span{
@@ -771,7 +772,6 @@ section{
     grid-area: social;
     color: var(--redAccent);
     text-align: center;    
-    width: 
 }
 
 #footer .social a{
@@ -799,10 +799,27 @@ section{
     grid-area: credit;
     text-align: right;
     font-size: .7rem;
+    width: 12rem;
+    float: right;
     position:absolute;
     bottom: 0;
     right: 0;
     
+}
+
+@media (max-width: 800px){
+    #footer .footer-wrapper{
+        grid-template-areas:  "social    social"
+                              "copywrite credit";
+        position:relative;
+        grid-gap: 0;
+    }
+    #footer .credit{
+        position:relative;
+    }
+    #footer .copywrite{
+        position: relative;
+    }
 }
 
 /* --------------------End Footer------------------- */
