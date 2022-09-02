@@ -896,7 +896,7 @@ section{
 #demolition .container,
 #junk-removal .container,
 #delivery .container{
-    margin: 2rem 1rem;
+    margin: 5rem 1rem;
     position: relative;
 }
 
@@ -1023,6 +1023,7 @@ section{
     display: flex;
     color: var(--blueText);
     justify-content: space-around;
+    margin-bottom: 5rem;
 }
 
 .title h2{
@@ -1039,6 +1040,7 @@ section{
 
 .content{
     margin: 2rem 8rem;
+    margin-bottom: 5rem;
     color: var(--redText);
 }
 
