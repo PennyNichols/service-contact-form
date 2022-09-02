@@ -823,6 +823,14 @@ section{
 /* --------------------End Footer------------------- */
 
 /* --------------------Header------------------- */
+#header{
+    background-image:linear-gradient(rgba(118, 113, 255, 0.523)0%, rgba(129, 137, 246, 0.7) 5%, rgba(215, 218, 247, 0.679) 40%, rgba(225, 173, 173, 0.664) 76%, rgba(224, 76, 76, 0.648) 94%, rgba(213, 17, 17, 0.64) 100%),
+    url(./images/flag.jpg);
+    background-position: relative;
+    background-attachment: fixed;
+
+}
+
 #header .header-container {
     display: flex;
     justify-content: center;
@@ -835,7 +843,7 @@ section{
     font-size: 4rem;
     text-transform: uppercase;
     text-shadow: 2px 2px white;
-    color: var(--blueAccent);
+    color: var(--blueText);
     letter-spacing: .4rem;
     font-weight: 900;
     margin-top: 2rem;
@@ -845,7 +853,7 @@ section{
     font-size: 1.2rem;
     color: var(--whiteText);
     letter-spacing: .1rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 
@@ -1080,6 +1088,65 @@ section{
 .content a:hover i{
     color: var(--redAccent); 
 }
+
+#services-contact{
+    background-image:linear-gradient(rgba(213, 17, 17, 0.64)0%, rgba(224, 76, 76, 0.648) 5%, rgba(225, 173, 173, 0.664) 40%, rgba(215, 218, 247, 0.679) 76%, rgba(129, 137, 246, 0.7) 94%, rgba(75, 69, 246, 0.523) 100%),
+    url(./images/flag.jpg);
+    background-position: relative;
+    background-attachment: fixed;
+}
+
+#services-contact .contact-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+#services-contact .contact a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--redAccent);
+    transition: all .5s ease-in-out;
+}
+
+#services-contact .contact a:hover{
+    transform: scale(1.2);
+    color: var(--blueAccent);
+}
+
+#services-contact .contact a i{
+    font-size: 5rem;
+}
+
+#services-contact .contact a h3{
+    font-size: 3.5rem;
+    line-height: 5rem;
+    vertical-align: middle;
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 1200px){
+    #services-contact .contact a i{
+        font-size: 3rem;
+    }
+    
+    #services-contact .contact a h3{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 900px){
+    #services-contact .contact a i{
+        font-size: 4rem;
+    }
+    
+    #services-contact .contact a h3{
+        display: none;
+    }
+}
+
 /* --------------------End Services.html------------------- */
 
 
