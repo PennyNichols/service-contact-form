@@ -44,7 +44,7 @@ section{
     text-align: center;
     font-size: 1.8rem;
     color: var(--blueText);
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 }
 
 .s-1{
@@ -460,8 +460,12 @@ section{
 /* --------------------Reviews------------------- */
 
 #reviews .reviews-wrapper{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
     justify-content: space-around;
+    justify-items: center;
+    align-items: stretch;
 }
 
 #reviews .review-wrapper{
@@ -488,6 +492,18 @@ section{
 
 #reviews .review-wrapper p{
     margin: 1.5rem 0;
+}
+
+@media (max-width: 1200px){
+    #reviews .reviews-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px){
+    #reviews .reviews-wrapper{
+        grid-template-columns: 1fr;
+    }
 }
 /* --------------------End Reviews------------------- */
 
