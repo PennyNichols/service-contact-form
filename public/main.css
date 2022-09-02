@@ -914,7 +914,7 @@ section{
     list-style-type: none;
     justify-content: space-between;
     z-index: 10;
-    line-height: 25rem;
+    line-height: 20rem;
     vertical-align: middle;
 }
 
@@ -1013,8 +1013,12 @@ section{
 #demolition img,
 #junk-removal img,
 #delivery img{
-    height: 25rem;
+    height: 20rem;
     object-fit: cover;
+}
+
+.title{
+    height: 10rem;
 }
 
 /* --------------------End Services.html------------------- */
