@@ -410,6 +410,10 @@ section{
 /* --------------------End Services------------------- */
 
 /* --------------------Attributes------------------- */
+#attributes{
+    padding: 7rem 0;
+}
+
 #attributes .attributes-wrapper{
     display: flex;
     justify-content: space-around;
@@ -490,11 +494,11 @@ section{
 }
 
 #gallery .next{
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 #gallery .prev{
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 #gallery .tns-nav {
@@ -522,6 +526,10 @@ section{
 /* ----------------End-Gallery------------------- */
 
 /* --------------------Reviews------------------- */
+
+#reviews{
+    padding-bottom: 7rem;
+}
 
 #reviews .reviews-wrapper{
     display: grid;
@@ -554,13 +562,28 @@ section{
     box-shadow: var(--boxShadow);
 }
 
-#reviews .review-wrapper p{
-    margin: 1.5rem 0;
-}
 
 #reviews .star{
     color: var(--blueAccent);
     font-size: 1.7rem;
+}
+
+#reviews p{
+    margin: 1.5rem 0;
+    color: var(--redText);
+}
+
+#reviews h3{
+    font-size: 2rem;
+    color: var(--blueText);
+    margin-bottom: 1rem;
+}
+
+#reviews h4{
+    font-size: .7rem;
+    color: var(--redText);
+    font-weight: 500;
+    letter-spacing: .2rem;
 }
 
 @media (max-width: 1200px){
@@ -638,6 +661,7 @@ section{
 #operating-hours{
     text-align: center;
     color: var(--blueAccent);
+    padding: 5rem 1rem;
 }
 
 #operating-hours i{
@@ -661,6 +685,127 @@ section{
 }
 
 /* --------------------End Operating Hours------------------- */
+
+/* --------------------Contact------------------- */
+
+#contact .contact-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+}
+
+#contact .contact a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--redAccent);
+    transition: all 1s;
+}
+
+#contact .contact a:hover{
+    transform: scale(1.2);
+    color: var(--blueAccent);
+}
+
+#contact .contact a i{
+    font-size: 5rem;
+}
+
+#contact .contact a h3{
+    font-size: 3.5rem;
+    line-height: 5rem;
+    vertical-align: middle;
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 1200px){
+    #contact .contact a i{
+        font-size: 3rem;
+    }
+    
+    #contact .contact a h3{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 900px){
+    #contact .contact a i{
+        font-size: 4rem;
+    }
+    
+    #contact .contact a h3{
+        display: none;
+    }
+}
+
+/* --------------------End Contact------------------- */
+
+/* --------------------Footer------------------- */
+#footer{
+    background-color: white;
+}
+
+#footer .footer-wrapper{
+    display:grid;
+    grid-template-areas: "copywrite social credit";
+    grid-gap: 1rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+#footer .copywrite{
+    grid-area: copywrite;
+    font-size: .7rem;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#footer .copywrite span{
+    color: var(--blueAccent);
+    font-size: .7rem;
+}
+
+#footer .social{
+    grid-area: social;
+    color: var(--redAccent);
+    text-align: center;    
+    width: 
+}
+
+#footer .social a{
+    color: var(--redAccent);
+    padding: 0 1rem;
+    transition: all .5s;
+}
+
+#footer .social a:hover{
+    color: var(--blueAccent);
+    
+}
+
+#footer .social a i{
+    font-size: 1.5rem;
+    padding-bottom: .4rem;
+    transition: all .5s;
+}
+
+#footer .social a i:hover{
+    transform: scale(1.2);
+}
+
+#footer .credit{
+    grid-area: credit;
+    text-align: right;
+    font-size: .7rem;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+/* --------------------End Footer------------------- */
 
 /* --------------------Header------------------- */
 #header .header-container {
