@@ -313,9 +313,12 @@ section{
 
 /* --------------------Services------------------- */
 #services .services-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: stretch;
 }
 
 
@@ -384,6 +387,24 @@ section{
 }
 #services .service-content:hover .md{
     color: var(--whiteText);
+}
+
+@media (max-width: 1200px){
+    #services .services-wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px){
+    #services .services-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    #services .services-wrapper{
+        grid-template-columns: 1fr;
+    }
 }
 
 /* --------------------End Services------------------- */
