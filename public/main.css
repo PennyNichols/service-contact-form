@@ -1461,6 +1461,8 @@ section{
     text-align: center;
 }
 
+
+
 #applications input,
 #applications select,
 #applications textarea{
@@ -1472,6 +1474,16 @@ section{
     background-color: var(--mainBG); 
     box-shadow: var(--boxShadowInset);   
 }
+
+#applications input[type="checkbox"]{
+    width: auto;
+    margin-right: .5rem;
+}
+
+#applications b{
+    font-size: 1.3rem;
+}
+
 
 
 
