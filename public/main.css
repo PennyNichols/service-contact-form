@@ -1189,6 +1189,88 @@ section{
     #services-contact .contact a h3{
         display: none;
     }
+
+    .content{
+        margin: 2rem 4rem;
+    }
+
+    #helping-hand .container,
+    #construction .container,
+    #assembly .container,
+    #home-repairs .container,
+    #painting .container,
+    #demolition .container,
+    #junk-removal .container,
+    #delivery .container{
+        margin: 2rem 1rem;
+    }
+}
+
+@media (max-width: 650px){
+    .title{
+        height: 7rem;
+        margin-bottom: 0;
+    }
+    
+    .content p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    .content .about-content b{
+        font-size: 1rem;
+    }
+    
+    .title h2{
+        font-size: 3rem;
+        line-height: 7rem;
+    }
+    
+    .title i{
+        font-size: 3rem;
+        line-height: 7rem;
+    }
+
+    
+    .content a h3,
+    .content a i{
+        font-size: 1.5rem;
+    }
+
+    .content a i{
+        margin-right: 1rem;
+        line-height: 1.7rem;
+        vertical-align: middle;
+    }
+
+    .content a{
+        justify-content: center;
+        margin:1rem 0;
+        width: auto;
+    }
+
+    .content{
+        margin: 2rem 2rem;
+    }
+}
+
+@media (max-width: 490px){
+    .content a h3,
+    .content a i{
+        font-size: 1rem;
+    }
+
+    .content a i{
+        line-height: 1rem;
+    }
+
+    .title h2{
+        font-size: 2rem;
+    }
+    
+    .title i{
+        font-size: 2rem;
+    }
 }
 
 /* --------------------End Services.html------------------- */
