@@ -697,8 +697,25 @@ section{
     font-size: 2rem;
 }
 
-#operating-hours p:first-of-type{
+#operating-hours .hours{
     margin-bottom: 2rem;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+#operating-hours .hours p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 770px){
+    #operating-hours .hours{
+        flex-direction: column;
+    }
+    #operating-hours .section-title{
+        font-size: 3rem;
+    }
 }
 
 /* --------------------End Operating Hours------------------- */
@@ -1222,7 +1239,6 @@ section{
     max-width: 50rem; 
     padding: 2rem;
     box-shadow: var(--boxShadow);
-    
 }
 
 #appointment h1{
@@ -1320,6 +1336,23 @@ section{
     #appointment-contact .section-title{
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+}
+
+@media (max-width: 520px){
+    #appointment{
+        max-width: 25rem; 
+        padding: 1rem;
+    }
+    #appointment h1{
+        font-size: 1.5rem;
+    }
+    #appointment-contact .section-title{
+        font-size: 2rem;
+    }
+    #appointment-contact .contact a i{
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 }
 /* --------------------End Contact.html------------------- */
