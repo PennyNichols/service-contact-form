@@ -58,6 +58,7 @@ section{
     margin-bottom: 3.5rem;
     font-family: var(--secondaryTitleFont);
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .s-1{
@@ -67,8 +68,10 @@ section{
 .s-img{
     background-image:linear-gradient(rgba(213, 17, 17, 0.64)0%, rgba(224, 76, 76, 0.648) 5%, rgba(225, 173, 173, 0.664) 40%, rgba(215, 218, 247, 0.679) 76%, rgba(129, 137, 246, 0.7) 94%, rgba(75, 69, 246, 0.523) 100%),
     url(./images/flag.jpg);
+    background-repeat: no-repeat;
     background-position: relative;
     background-attachment: fixed;
+    background-size: cover;
 
 }
 
@@ -844,6 +847,8 @@ section{
     background-position: relative;
     background-attachment: fixed;
     height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -1112,6 +1117,8 @@ section{
     url(./images/flag.jpg);
     background-position: relative;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #services-contact .contact-wrapper{
@@ -1166,5 +1173,81 @@ section{
 }
 
 /* --------------------End Services.html------------------- */
+/* --------------------Contact.html------------------- */
+
+#appointment-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#appointment-contact .contact-wrapper{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+#appointment-contact .contact a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--redAccent);
+    transition: all .5s ease-in-out;
+}
+
+#appointment-contact .contact a:hover{
+    transform: scale(1.2);
+    color: var(--blueAccent);
+}
+
+#appointment-contact .contact a i{
+    font-size: 3rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    margin-right: 2rem;
+}
+
+#appointment-contact .contact a h3{
+    font-size: 3rem;
+    line-height: 4rem;
+    vertical-align: middle;
+}
+
+#appointment{
+    background-color: var(--whiteText);
+    max-width: 50rem; 
+    min-width: 30rem;
+    padding: 2rem;
+    
+}
+
+#appointment h1{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--blueText);
+    text-transform: uppercase;
+}
+
+#appointment input,
+#appointment select,
+#appointment textarea{
+    margin: 1rem auto;
+    width: 100%;
+    padding: .5rem;
+    color: var(--redAccent);
+}
+
+#appointment label{
+    color: var(--blueText);
+}
+
+#appointment input::placeholder,
+#appointment select,
+#appointment textarea::placeholder{
+    color: var(--redText) !important;
+    opacity: .5;
+}
+/* --------------------End Contact.html------------------- */
 
 
