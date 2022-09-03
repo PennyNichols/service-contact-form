@@ -226,12 +226,12 @@ section{
 
 #logo{
     height: 4rem;
-    border-radius: .7rem;
+    border-radius: .3rem;
+    transition: all .5s ease-in-out;
 }
 
 #logo:hover{
-    transform: rotate(360deg);
-    transition: all 1.2s ease-in-out;
+    transform: rotate(-30deg);
 }
 
 #navigation .nav-links{
@@ -761,6 +761,7 @@ section{
 /* --------------------Footer------------------- */
 #footer{
     background-color: white;
+    margin-top: 2rem;
 }
 
 #footer .footer-wrapper{
@@ -1268,11 +1269,34 @@ section{
     line-height: 2rem;
     text-decoration: none;
     color: var(--redText);
+    transition: all .7s ease-in-out;
 }
+
+#appointment .attachments:hover{
+    color: var(--blueAccent);
+}
+
 
 #appointment button{
     margin-top: 1rem;
     width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    color: var(--whiteText);
+    padding: .5rem;
+    border: 2px solid white;
+    background-color: var(--redAccent);
+    outline: 2px solid var(--redAccent);
+    transition: all .7s ease-in-out;
+}
+
+#appointment button:hover{
+    background-color: var(--blueAccent);
+    outline: 2px solid var(--blueAccent);
+    transform: scale(1.1);
 }
 /* --------------------End Contact.html------------------- */
 
