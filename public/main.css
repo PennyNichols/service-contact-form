@@ -8,6 +8,7 @@
     --redText: #CA0202;
     --whiteText: white;
     --boxShadow: 3px 3px 8px 3px rgba(0,0,0,0.48);
+    --boxShadowInset: inset 0px 2px 8px -2px rgba(0,0,0,0.41);
     --blueAccent: blue;
     --redAccent: #c40101;
     --mainBG: #F2F1FF;
@@ -1219,6 +1220,7 @@ section{
     max-width: 50rem; 
     min-width: 30rem;
     padding: 2rem;
+    box-shadow: var(--boxShadow);
     
 }
 
@@ -1236,17 +1238,32 @@ section{
     width: 100%;
     padding: .5rem;
     color: var(--redAccent);
+    border: none;
+    background-color: var(--mainBG); 
+    box-shadow: var(--boxShadowInset);   
 }
+
+
 
 #appointment label{
     color: var(--blueText);
+    font-weight: 700;
+    letter-spacing: .03rem;
 }
 
 #appointment input::placeholder,
 #appointment select,
 #appointment textarea::placeholder{
     color: var(--redText) !important;
-    opacity: .5;
+    opacity: .8;
+}
+
+
+
+#appointment span{
+    color: var(--redText);
+    font-size: 1rem;
+    font-weight: 300;
 }
 /* --------------------End Contact.html------------------- */
 
