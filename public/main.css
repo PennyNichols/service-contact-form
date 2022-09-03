@@ -1214,12 +1214,12 @@ section{
     font-size: 3rem;
     line-height: 4rem;
     vertical-align: middle;
+    text-transform: uppercase;
 }
 
 #appointment{
     background-color: var(--whiteText);
     max-width: 50rem; 
-    min-width: 30rem;
     padding: 2rem;
     box-shadow: var(--boxShadow);
     
@@ -1297,6 +1297,30 @@ section{
     background-color: var(--blueAccent);
     outline: 2px solid var(--blueAccent);
     transform: scale(1.1);
+}
+
+@media (max-width: 950px){
+    #appointment-contact .contact-wrapper{
+        justify-content: center;
+    }
+
+    #appointment-contact .contact{
+        text-align: center;
+        justify-content: center;
+    }
+
+    #appointment-contact .contact a h3{
+        display: none;
+    }
+
+    #appointment-contact .contact a i{
+        margin-right: 0;
+    }
+
+    #appointment-contact .section-title{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 /* --------------------End Contact.html------------------- */
 
