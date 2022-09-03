@@ -64,7 +64,9 @@
 
         <form id="applications" method="POST" action="/api/applications">
             <h1>Online Application</h1>
-            <h2>Earn up to $30 per hour!</h2>
+            <p>Earn up to $30 per hour at Schmidt's Home Services! Pay rate starts at $15 an hour and is based on skill level. Your pay rate will be determined by your performance during your first day on the job. If you feel like your first day does not reflect your overall skill level (jobs vary greatly), you may request for your pay rate to be determined at the end of your first week. If you possess entry-level skills, you will be paid entry level wages. If you are an expert, already have everything that you would need to work most jobs, are able to communicate effectively with clients, and do not require any on the job supervision or guidance, you will be paid expert level wages. Performance reviews are available every 6 months.</p>
+            <p>At Schmidt's Home Services, we appreciate our service technicians. To show our appreciation, we provide our technicians with various benefits to keep them happy. Currently, our benefits include weekly pay (on Fridays via CashApp or direct deposit), paid time off, unlimited vacation days, and a set-your-own-hours work schedule. Our technicians earn one hour of paid time off for every 40 hours worked with no wait period for redemption. We never put a limit on how many personal days or vacation periods our technicians are allowed per year. Simply tell us your availability 1 - 2 weeks in advanced and we will tailor your work schedule to fit your life schedule! </p>
+
             <label for="first">First Name: <span class="required">*</span></label>
             <br>
             <input  name="first" id="first-name" type="text" placeholder="First Name" class="form-control" required />
@@ -96,27 +98,27 @@
             <br>
 
             <input name="workauth" id="workauth" type="checkbox" class="form-control"  />
-            <label for="workauth">I am a US citizen or I am authorized to work in the US</label>
+            <label class="check-label" for="workauth">I am a US citizen or I am authorized to work in the US</label>
             <br>
 
             <input name="background" id="background" type="checkbox" class="form-control"  />
-            <label for="background">I have not been convicted of any violent or theft-related crimes in the past three years</label>
+            <label class="check-label" for="background">I have not been convicted of any violent or theft-related crimes in the past three years</label>
             <br>
 
             <input name="insurance" id="insurance" type="checkbox" class="form-control"  />
-            <label for="insurance">I have my own liability insurance policy</label>
+            <label class="check-label" for="insurance">I have my own liability insurance policy</label>
             <br>
 
             <input name="vehicle" id="vehicle" type="checkbox" class="form-control"  />
-            <label for="vehicle">I have my own reliable vehicle</label>
+            <label class="check-label" for="vehicle">I have my own reliable vehicle</label>
             <br>
 
             <input name="trailer" id="trailer" type="checkbox" class="form-control"  />
-            <label for="trailer">My vehicle has a hitch and a towing capacity of at least 5,000 lbs</label>
+            <label class="check-label" for="trailer">My vehicle has a hitch and a towing capacity of at least 5,000 lbs</label>
             <br>
 
             <input name="ride" id="ride" type="checkbox" class="form-control"  />
-            <label for="ride">I will need transportation to and from work</label>
+            <label class="check-label" for="ride">I will need transportation to and from work</label>
             <br>
             <br>
             
@@ -181,19 +183,19 @@
             <br>
 
             <input name="permit" id="permit" type="checkbox" class="form-control"  /> 
-            <label for="permit">Currently possess any type of construction-related licenses granting the ability to pull permits</label>
+            <label class="check-label" for="permit">Currently possess any type of construction-related licenses granting the ability to pull permits</label>
             <br>      
 
             <input name="training" id="training" type="checkbox" class="form-control"  /> 
-            <label for="training">Currently possess or previously possessed any type of construction-related licenses or certifications (permit-granting or not) </label>
+            <label class="check-label" for="training">Currently possess or previously possessed any type of construction-related licenses or certifications (permit-granting or not) </label>
             <br>   
 
             <input name="communication" id="communication" type="checkbox" class="form-control"  /> 
-            <label for="communication">Clear, comfortable, respectful communication skills </label>
+            <label class="check-label" for="communication">Clear, comfortable, respectful communication skills </label>
             <br> 
 
             <input name="assemble" id="assemble" type="checkbox" class="form-control"  /> 
-            <label for="assemble">Can assemble most products within the manufacturers estimated assembly time</label>
+            <label class="check-label" for="assemble">Can assemble most products within the manufacturers estimated assembly time</label>
             <br>  
             <br>
 
@@ -452,23 +454,23 @@
             <br>
 
             <input name="handtools" id="handtools" type="checkbox" class="form-control"  /> 
-            <label for="handtools">Hand tools (hammers, screwdriver with interchangeable bits, bit set (including phillips, flathead, square, star, and allen), basic level, square, tape measurer, pliers, utility knife, etc.)</label>
+            <label class="check-label" for="handtools">Hand tools (hammers, screwdriver with interchangeable bits, bit set (including phillips, flathead, square, star, and allen), basic level, square, tape measurer, pliers, utility knife, etc.)</label>
             <br>
 
             <input name="drills" id="drills" type="checkbox" class="form-control"  /> 
-            <label for="drills">Drill set (screw gun, hammer drill, or impact driver, etc.)</label>
+            <label class="check-label" for="drills">Drill set (screw gun, hammer drill, or impact driver, etc.)</label>
             <br>
 
             <input name="saws" id="saws" type="checkbox" class="form-control"  /> 
-            <label for="saws">Power saws (circular saw, skill saw, jigsaw, oscillator saw, coping saw, miter saw, or chainsaw, etc.)</label>
+            <label class="check-label" for="saws">Power saws (circular saw, skill saw, jigsaw, oscillator saw, coping saw, miter saw, or chainsaw, etc.)</label>
             <br>
 
             <input name="nailgun" id="nailgun" type="checkbox" class="form-control"  /> 
-            <label for="nailgun">Nail guns (framing, brad, finish, siding, or roofing nail guns) </label>
+            <label class="check-label" for="nailgun">Nail guns (framing, brad, finish, siding, or roofing nail guns) </label>
             <br>
 
             <input name="vac" id="vac" type="checkbox" class="form-control"  /> 
-            <label for="vac">Wet/Dry vacuum with at least 3 attachments</label>
+            <label class="check-label" for="vac">Wet/Dry vacuum with at least 3 attachments</label>
             <br>
             <br>
 
@@ -489,7 +491,7 @@
             <label for="resume">Submit your resume: </label>
             <br>
             <br>
-            <a href="mailto:joshua@schmidtshomeservices.com">Click Here to Submit Your Resume</a>
+            <a class = "attachments" href="mailto:joshua@schmidtshomeservices.com">Click Here to Submit an External Resume</a>
             <br>
             <br>
 

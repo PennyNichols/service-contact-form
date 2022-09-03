@@ -1477,11 +1477,18 @@ section{
 
 #applications input[type="checkbox"]{
     width: auto;
-    margin-right: .5rem;
+    margin-right: 1rem;
 }
 
 #applications b{
     font-size: 1.3rem;
+    font-weight: 900;
+}
+
+#applications p{
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 2rem 1rem;
 }
 
 
@@ -1489,8 +1496,12 @@ section{
 
 #applications label{
     color: var(--blueText);
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: .03rem;
+}
+
+#first-label{
+    padding-top: 2rem !important;
 }
 
 #applications input::placeholder,
