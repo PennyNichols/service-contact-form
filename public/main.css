@@ -1443,16 +1443,22 @@ section{
 
 #applications{
     background-color: var(--whiteText);
-    max-width: 50rem; 
+     
     padding: 2rem;
     box-shadow: var(--boxShadow);
 }
 
 #applications h1{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
     color: var(--blueText);
     text-transform: uppercase;
+    text-align:center;
+}
+
+#applications h2{
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 #applications input,
