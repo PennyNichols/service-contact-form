@@ -1439,4 +1439,89 @@ section{
 }
 /* --------------------End Contact.html------------------- */
 
+/* --------------------Apply.html------------------- */
+
+#applications{
+    background-color: var(--whiteText);
+    max-width: 50rem; 
+    padding: 2rem;
+    box-shadow: var(--boxShadow);
+}
+
+#applications h1{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--blueText);
+    text-transform: uppercase;
+}
+
+#applications input,
+#applications select,
+#applications textarea{
+    margin: 1rem auto;
+    width: 100%;
+    padding: .5rem;
+    color: var(--redAccent);
+    border: none;
+    background-color: var(--mainBG); 
+    box-shadow: var(--boxShadowInset);   
+}
+
+
+
+#applications label{
+    color: var(--blueText);
+    font-weight: 700;
+    letter-spacing: .03rem;
+}
+
+#applications input::placeholder,
+#applications select,
+#applications textarea::placeholder{
+    color: var(--redText) !important;
+    opacity: .8;
+}
+
+#applications span{
+    color: var(--redText);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#applications .attachments{
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--redText);
+    transition: all .7s ease-in-out;
+}
+
+#applications .attachments:hover{
+    color: var(--blueAccent);
+}
+
+
+#applications button{
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    color: var(--whiteText);
+    padding: .5rem;
+    border: 2px solid white;
+    background-color: var(--redAccent);
+    outline: 2px solid var(--redAccent);
+    transition: all .7s ease-in-out;
+}
+
+#applications button:hover{
+    background-color: var(--blueAccent);
+    outline: 2px solid var(--blueAccent);
+    transform: scale(1.1);
+}
+
+/* --------------------End Apply.html------------------- */
+
 
