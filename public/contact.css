@@ -1,0 +1,165 @@
+
+/* --------------------Contact.html------------------- */
+
+#appointment-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#appointment-contact .contact-wrapper{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+#appointment-contact .contact a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--redAccent);
+    transition: all .5s ease-in-out;
+}
+
+#appointment-contact .contact a:hover{
+    transform: scale(1.2);
+    color: var(--blueAccent);
+}
+
+#appointment-contact .contact a i{
+    font-size: 3rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    margin-right: 2rem;
+}
+
+#appointment-contact .contact a h3{
+    font-size: 3rem;
+    line-height: 4rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+#appointment{
+    background-color: var(--whiteText);
+    max-width: 50rem; 
+    padding: 2rem;
+    box-shadow: var(--boxShadow);
+}
+
+#appointment h1{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--blueText);
+    text-transform: uppercase;
+}
+
+#appointment input,
+#appointment select,
+#appointment textarea{
+    margin: 1rem auto;
+    width: 100%;
+    padding: .5rem;
+    color: var(--redAccent);
+    border: none;
+    background-color: var(--mainBG); 
+    box-shadow: var(--boxShadowInset);   
+}
+
+
+
+#appointment label{
+    color: var(--blueText);
+    font-weight: 700;
+    letter-spacing: .03rem;
+}
+
+#appointment input::placeholder,
+#appointment select,
+#appointment textarea::placeholder{
+    color: var(--redText) !important;
+    opacity: .8;
+}
+
+#appointment span{
+    color: var(--redText);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#appointment .attachments{
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--redText);
+    transition: all .7s ease-in-out;
+}
+
+#appointment .attachments:hover{
+    color: var(--blueAccent);
+}
+
+
+#appointment button{
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    color: var(--whiteText);
+    padding: .5rem;
+    border: 2px solid white;
+    background-color: var(--redAccent);
+    outline: 2px solid var(--redAccent);
+    transition: all .7s ease-in-out;
+}
+
+#appointment button:hover{
+    background-color: var(--blueAccent);
+    outline: 2px solid var(--blueAccent);
+    transform: scale(1.1);
+}
+
+@media (max-width: 950px){
+    #appointment-contact .contact-wrapper{
+        justify-content: center;
+    }
+
+    #appointment-contact .contact{
+        text-align: center;
+        justify-content: center;
+    }
+
+    #appointment-contact .contact a h3{
+        display: none;
+    }
+
+    #appointment-contact .contact a i{
+        margin-right: 0;
+    }
+
+    #appointment-contact .section-title{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 520px){
+    #appointment{
+        max-width: 25rem; 
+        padding: 1rem;
+    }
+    #appointment h1{
+        font-size: 1.5rem;
+    }
+    #appointment-contact .section-title{
+        font-size: 2rem;
+    }
+    #appointment-contact .contact a i{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+/* --------------------End Contact.html------------------- */
