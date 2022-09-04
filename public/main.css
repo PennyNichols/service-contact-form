@@ -214,6 +214,7 @@ section{
     position: sticky;
     top: 0;
     box-shadow: var(--boxShadow);
+    overflow: hidden;
 }
 
 #navigation .nav-wrapper{
@@ -314,7 +315,7 @@ section{
     #navigation .nav-links{
         flex-direction: column;
         text-align: center;
-        height: 100%;
+        height: 100vh;
         display: none;
     }
 
