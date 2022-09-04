@@ -209,8 +209,8 @@ section{
     background: blue;
     width: 100%;
     z-index: 9999;
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     top: 0;
     box-shadow: var(--boxShadow);
 }
