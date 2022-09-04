@@ -90,7 +90,7 @@ section{
     background-size: cover;
     position: relative;
     left: 0;
-    overflow-y: hidden;
+    overflow: hidden;
     
 }
 
