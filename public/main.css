@@ -214,7 +214,6 @@ section{
     position: sticky;
     top: 0;
     box-shadow: var(--boxShadow);
-    overflow: hidden;
 }
 
 #navigation .nav-wrapper{
@@ -228,7 +227,6 @@ section{
 
 #logo{
     height: 4rem;
-    border-radius: .3rem;
     transition: all .5s ease-in-out;
 }
 
@@ -836,7 +834,7 @@ section{
     grid-area: credit;
     text-align: right;
     font-size: .7rem;
-    width: 12rem;
+    width: auto;
     float: right;
     position:absolute;
     bottom: 0;
